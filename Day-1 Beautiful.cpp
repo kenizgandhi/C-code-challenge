@@ -1,9 +1,3 @@
-/*Given a square matrix of size n x n. 
-*Find minimum number of operation are required such that sum of elements on each row and column becomes equals. 
-*In one operation, increment any value of cell of matrix by 1. 
-*In first line print minimum operation required. 
-*In next ‘n’ lines print ‘n’ integers representing the final matrix after operation.
-*/
 
 #include <bits/stdc++.h>
 #include <iostream>
@@ -17,7 +11,7 @@ int calcMinNoOperations(int matrix[][5], int n)
     memset(sumRows, 0, sizeof(sumRows));
     memset(sumCols, 0, sizeof(sumCols));
 
-    // Calculating the sum of Row and column array
+    // Calculating the sum of Rows and columns array
     for (int i = 0; i < n; i++)
     {
         for (int j = 0; j < n; j++)
@@ -27,7 +21,7 @@ int calcMinNoOperations(int matrix[][5], int n)
         }
     }
 
-    // Find the max Sum value in either row or in column
+    // Find the maxSum value in either row or in column
     int maxSum = 0;
     for (int i = 0; i < n; i++)
     {
@@ -42,7 +36,7 @@ int calcMinNoOperations(int matrix[][5], int n)
 
         int diff = min(maxSum - sumRows[i], maxSum - sumCols[j]);
 
-        // Add difference in the corresponding cell, sumRows[] and sumCols[] array
+        // Add difference in the corresponding cell in matrix, sumRows[] and sumCols[] array
         matrix[i][j] += diff;
         sumRows[i] += diff;
         sumCols[j] += diff;
@@ -75,6 +69,7 @@ void printMatrix(int matrix[][5], int n)
     }
 }
 
+// main function
 int main()
 {
     int m, i;
