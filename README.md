@@ -1,7 +1,7 @@
 # C-code-challenge
 
 Day 1 of coding challenge in C++
-/*Given a square matrix of size n x n. 
+/* Given a square matrix of size n x n. 
 *Find minimum number of operation required to make sum of elements on each row and column become equal. 
 *In one operation, increament any value of cell of matrix only by 1. 
 *Take an input from user for value n and matrix values. 
@@ -11,4 +11,4 @@ Day 1 of coding challenge in C++
 
 
 Day 2 of coding challenge in C++
-/*Program to find the absolute difference between sum of its diagonals*/
+/* Program to find the absolute difference between sum of its diagonals */
