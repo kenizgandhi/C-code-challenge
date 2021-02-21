@@ -1,4 +1,4 @@
-# C-code-challenge
+# Cpp-code-challenge
 
 Day 1 of coding challenge in C++
 /* Given a square matrix of size n x n. 
